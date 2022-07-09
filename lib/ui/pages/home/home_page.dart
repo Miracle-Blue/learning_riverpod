@@ -108,7 +108,7 @@ class _ContactsField extends ConsumerWidget {
   }
 }
 
-class _ErrorWidget extends ConsumerWidget {
+class _ErrorWidget extends StatelessWidget {
   final String message;
 
   const _ErrorWidget({
@@ -117,7 +117,7 @@ class _ErrorWidget extends ConsumerWidget {
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return Center(
       child: Text(message),
     );
